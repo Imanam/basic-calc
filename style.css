@@ -5,8 +5,15 @@ html {
   min-width: 400px;
 }
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+display: grid;
+  grid-template-areas: 
+   'r r r'
+   'k7 k8 k9'
+   'k4 k5 k6'
+   'k1 k2 k3'
+   'kcls k0 kdot'
+   'kplus kminus kequal'
+   'kmult kdiv kplusminus';
   background-color: #2196F3;
   padding: 10px;
   margin: auto;
@@ -24,11 +31,75 @@ html {
   grid-column-start: 1;
   grid-column-end: 4;
   overflow: auto;
-  font-size: 25px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
+.grid-compact-result {
+  font-size: 25px;
+}
+
+.grid-negative-result {
+  color: red;
+}
 .grid-button {
   cursor: pointer;
 }
+
+.k1 {
+  grid-area: k1;
+}
+.k2 {
+  grid-area: k2;
+}
+.k3 {
+  grid-area: k3;
+}
+.k4 {
+  grid-area: k4;
+}
+.k5 {
+  grid-area: k5;
+}
+.k6 {
+  grid-area: k6;
+}
+.k7 {
+  grid-area: k7;
+}
+.k8 {
+  grid-area: k8;
+}
+.k9 {
+  grid-area: k9;
+}
+.k0 {
+  grid-area: k0;
+}
+.kcls {
+  grid-area: kcls;
+}
+.kplus {
+  grid-area: kplus;
+}
+.kdot {
+  grid-area: kdot;
+}
+.kminus {
+  grid-area: kminus;
+}
+.kequal {
+  grid-area: kequal;
+}
+.kmult {
+  grid-area: kmult;
+}
+.kdiv {
+  grid-area: kdiv;
+}
+.kplusminus {
+  grid-area: kplusminus;
+}
+.grid-item-result {
+  grid-area: r;
+
