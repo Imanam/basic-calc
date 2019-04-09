@@ -6,22 +6,6 @@ html {
 }
 .grid-container {
   display: grid;
-  /*grid-template-rows: auto auto;
-  grid-template-columns: auto auto;*/
-  /*grid-template-areas: */
-   /*'r r r'
-   'k7 k8 k9'
-   'k4 k5 k6'
-   'k1 k2 k3'
-   'kcls k0 kdot'
-   'kplus kminus kequal'
-   'kmult kdiv kplusminus';*/
- 
-  /* 'r r r r r r r r'
-   'k7 k8 k9 kcls k0 kdot'
-   'k4 k5 k6 kplus kminus kequal'
-   'k1 k2 k3 kmult kdiv kplusminus'
-*/
   background-color: #2196F3;
   padding: 10px;
   margin-right: auto;
@@ -44,10 +28,6 @@ html {
   padding-right: 5px;
   margin: 0;
   display: block;
-  /*grid-column-start: 1; 
-  grid-column-end: 3; 
-  grid-row-start: 1; 
-  grid-row-end: 2; */
 }
 
 .grid-compact-result {
@@ -123,10 +103,6 @@ html {
    'k7 k8 k9'
    'k4 k5 k6'
    'k1 k2 k3';
-  /*grid-column-start: 1; 
-  grid-column-end: 2;
-  grid-row-start: 2; 
-  grid-row-end: 3;*/
 }
 .others {
   display: grid;
@@ -134,20 +110,12 @@ html {
    'kcls k0 kdot'
    'kplus kminus kequal'
    'kmult kdiv kplusminus';
-
-  /*grid-column-start: 2; 
-  grid-column-end: 3;
-  grid-row-start: 2; 
-  grid-row-end: 3;*/
 }
 
 
  
 @media only screen and (min-width: 480px) {
   .grid-container {
-   /* display: grid;
-    grid-auto-rows: auto;*/
-
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -190,18 +158,6 @@ html {
   grid-row-end: 3;
 }
 
-/*  .grid-item-result {
-    grid-row-start: 1; 
-    grid-row-end: 2; 
-  }
-  .numbers {
-    grid-row-start: 2; 
-    grid-row-end: 3; 
-  }
-  .others {
-    grid-row-start: 3; 
-    grid-row-end: 4; 
-  }*/
   html {
     background: pink;
   }

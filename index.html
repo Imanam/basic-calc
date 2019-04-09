@@ -17,16 +17,8 @@
 
   <div class="grid-container" id="vue-app">
 
-<!--     <span v-show="!validateNumber">Please insert numbers</span>
- --> 
-    <!-- <div id="result-container"> -->
-
       <input class="grid-item grid-item-result" v-model="displayResult" :class = "{'grid-compact-result' : result.length > 18 ,'grid-negative-result' : parseFloat(result) < 0}"/>
-    
-    <!-- </div> -->
-
-    
-    
+      
 
       <div class="numbers">
         <div class="grid-item grid-button k1" @click="addNumber">1</div>
@@ -53,8 +45,6 @@
       </div>
 
     
-
-
   </div>
   
   <script src="./calc.js"></script>
