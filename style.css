@@ -6,29 +6,159 @@ html {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
   background-color: #2196F3;
   padding: 10px;
-  margin: auto;
-  max-width: 340px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 20px 0;
   font-size: 30px;
   text-align: center;
   min-height: 30px;
 }
+
 .grid-item-result {
-  grid-column-start: 1;
-  grid-column-end: 4;
+
   overflow: auto;
-  font-size: 25px;
   padding-left: 5px;
   padding-right: 5px;
+  margin: 0;
+  display: block;
 }
 
+.grid-compact-result {
+  font-size: 25px;
+}
+
+.grid-negative-result {
+  color: red;
+}
 .grid-button {
   cursor: pointer;
+}
+
+.k1 {
+  grid-area: k1;
+}
+.k2 {
+  grid-area: k2;
+}
+.k3 {
+  grid-area: k3;
+}
+.k4 {
+  grid-area: k4;
+}
+.k5 {
+  grid-area: k5;
+}
+.k6 {
+  grid-area: k6;
+}
+.k7 {
+  grid-area: k7;
+}
+.k8 {
+  grid-area: k8;
+}
+.k9 {
+  grid-area: k9;
+}
+.k0 {
+  grid-area: k0;
+}
+.kcls {
+  grid-area: kcls;
+  font-size: 25px;
+}
+.kplus {
+  grid-area: kplus;
+}
+.kdot {
+  grid-area: kdot;
+}
+.kminus {
+  grid-area: kminus;
+}
+.kequal {
+  grid-area: kequal;
+}
+.kmult {
+  grid-area: kmult;
+}
+.kdiv {
+  grid-area: kdiv;
+}
+.kplusminus {
+  grid-area: kplusminus;
+}
+.numbers {
+  display: grid;
+  grid-template-areas: 
+   
+   'k7 k8 k9'
+   'k4 k5 k6'
+   'k1 k2 k3';
+}
+.others {
+  display: grid;
+  grid-template-areas: 
+   'kcls k0 kdot'
+   'kplus kminus kequal'
+   'kmult kdiv kplusminus';
+}
+
+
+ 
+@media only screen and (min-width: 480px) {
+  .grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  }
+  .grid-item-result {
+
+  overflow: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+  display: block;
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+
+  .others {
+  display: grid;
+  grid-template-areas: 
+   'kcls k0 kdot'
+   'kplus kminus kequal'
+   'kmult kdiv kplusminus';
+
+  grid-column-start: 2; 
+  grid-column-end: 3;
+  grid-row-start: 2; 
+  grid-row-end: 3;
+}
+.numbers {
+  display: grid;
+  grid-template-areas: 
+   
+   'k7 k8 k9'
+   'k4 k5 k6'
+   'k1 k2 k3';
+  grid-column-start: 1; 
+  grid-column-end: 2;
+  grid-row-start: 2; 
+  grid-row-end: 3;
+}
+
+  html {
+    background: pink;
+  }
 }
