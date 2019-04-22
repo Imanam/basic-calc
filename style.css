@@ -4,14 +4,16 @@ html {
   background: snow;
   min-width: 400px;
 }
+
 .grid-container {
   display: grid;
-  background-color: #2196F3;
+  background-color: #2196f3;
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
   max-width: 500px;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -22,7 +24,6 @@ html {
 }
 
 .grid-item-result {
-
   overflow: auto;
   padding-left: 5px;
   padding-right: 5px;
@@ -37,6 +38,7 @@ html {
 .grid-negative-result {
   color: red;
 }
+
 .grid-button {
   cursor: pointer;
 }
@@ -98,67 +100,72 @@ html {
 }
 .numbers {
   display: grid;
-  grid-template-areas: 
-   
-   'k7 k8 k9'
-   'k4 k5 k6'
-   'k1 k2 k3';
+  grid-template-areas:
+    "k7 k8 k9"
+    "k4 k5 k6"
+    "k1 k2 k3";
 }
 .others {
   display: grid;
-  grid-template-areas: 
-   'kcls k0 kdot'
-   'kplus kminus kequal'
-   'kmult kdiv kplusminus';
+  grid-template-areas:
+    "kcls k0 kdot"
+    "kplus kminus kequal"
+    "kmult kdiv kplusminus";
 }
 
-
- 
 @media only screen and (min-width: 480px) {
   .grid-container {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
   }
   .grid-item-result {
-
-  overflow: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 0;
-  display: block;
-  grid-column-start: 1; 
-  grid-column-end: 3; 
-  grid-row-start: 1; 
-  grid-row-end: 2; 
-}
+    overflow: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 
   .others {
-  display: grid;
-  grid-template-areas: 
-   'kcls k0 kdot'
-   'kplus kminus kequal'
-   'kmult kdiv kplusminus';
+    display: grid;
+    grid-template-areas:
+      "kcls k0 kdot"
+      "kplus kminus kequal"
+      "kmult kdiv kplusminus";
 
-  grid-column-start: 2; 
-  grid-column-end: 3;
-  grid-row-start: 2; 
-  grid-row-end: 3;
-}
-.numbers {
-  display: grid;
-  grid-template-areas: 
-   
-   'k7 k8 k9'
-   'k4 k5 k6'
-   'k1 k2 k3';
-  grid-column-start: 1; 
-  grid-column-end: 2;
-  grid-row-start: 2; 
-  grid-row-end: 3;
-}
-
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .numbers {
+    display: grid;
+    grid-template-areas:
+      "k7 k8 k9"
+      "k4 k5 k6"
+      "k1 k2 k3";
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
   html {
     background: pink;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  a:hover {
+    color: blue;
   }
 }

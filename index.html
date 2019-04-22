@@ -12,41 +12,41 @@
 
   <h1>Simple Calculator</h1>
 
-  <p>With a Grid Layout...</p>
-
+  <p>With <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a> and a <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank"
+      rel="noopener noreferrer">CSS Grid Layout</a>...</p>
 
   <div class="grid-container" id="vue-app">
 
-      <input class="grid-item grid-item-result" v-model="displayResult" :class = "{'grid-compact-result' : result.length > 18 ,'grid-negative-result' : parseFloat(result) < 0}"/>
-      
+    <input class="grid-item grid-item-result" v-model="displayResult"
+      :class="{'grid-compact-result' : result.length > 18 ,'grid-negative-result' : parseFloat(result) &lt; 0.0}" />
 
-      <div class="numbers">
-        <div class="grid-item grid-button k1" @click="addNumber">1</div>
-        <div class="grid-item grid-button k2" @click="addNumber">2</div>
-        <div class="grid-item grid-button k3" @click="addNumber">3</div>
-        <div class="grid-item grid-button k4" @click="addNumber">4</div>
-        <div class="grid-item grid-button k5" @click="addNumber">5</div>
-        <div class="grid-item grid-button k6" @click="addNumber">6</div>
-        <div class="grid-item grid-button k7" @click="addNumber">7</div>
-        <div class="grid-item grid-button k8" @click="addNumber">8</div>
-        <div class="grid-item grid-button k9" @click="addNumber">9</div>
-      </div>
-      
-      <div class="others">
-        <div class="grid-item grid-button kcls" @click="clear">C</div>
-        <div class="grid-item grid-button k0" @click="addNumber">0</div>
-        <div class="grid-item grid-button kdot" @click="dot">.</div> 
-        <div class="grid-item grid-button kplus" @click="plus">+</div>
-        <div class="grid-item grid-button kminus" @click="minus">-</div>
-        <div class="grid-item grid-button kequal" @click="equal">=</div>
-        <div class="grid-item grid-button kmult" @click="times">&times;</div>
-        <div class="grid-item grid-button kdiv" @click="divide">&divide;</div>
-        <div class="grid-item grid-button kplusminus" @click="plusmn">&plusmn;</div>
-      </div>
+    <div class="numbers">
+      <div class="grid-item grid-button k1" @click="addDigit">1</div>
+      <div class="grid-item grid-button k2" @click="addDigit">2</div>
+      <div class="grid-item grid-button k3" @click="addDigit">3</div>
+      <div class="grid-item grid-button k4" @click="addDigit">4</div>
+      <div class="grid-item grid-button k5" @click="addDigit">5</div>
+      <div class="grid-item grid-button k6" @click="addDigit">6</div>
+      <div class="grid-item grid-button k7" @click="addDigit">7</div>
+      <div class="grid-item grid-button k8" @click="addDigit">8</div>
+      <div class="grid-item grid-button k9" @click="addDigit">9</div>
+    </div>
 
-    
+    <div class="others">
+      <div class="grid-item grid-button kcls" @click="clear">C</div>
+      <div class="grid-item grid-button k0" @click="addDigit">0</div>
+      <div class="grid-item grid-button kdot" @click="dot">.</div>
+      <div class="grid-item grid-button kplus" @click="addOperator">+</div>
+      <div class="grid-item grid-button kminus" @click="addOperator">-</div>
+      <div class="grid-item grid-button kequal" @click="equal">=</div>
+      <div class="grid-item grid-button kmult" @click="addOperator">&times;</div>
+      <div class="grid-item grid-button kdiv" @click="addOperator">&divide;</div>
+      <div class="grid-item grid-button kplusminus" @click="plusMinus">&plusmn;</div>
+    </div>
+
   </div>
-  
+
   <script src="./calc.js"></script>
 
 </body>
